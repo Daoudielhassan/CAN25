@@ -1,0 +1,53 @@
+event_id,date,teams,status,competition_id
+732133,2025-12-21T19:00Z,Morocco vs Comoros,Full Time,732133
+732134,2025-12-22T14:00Z,Mali vs Zambia,Full Time,732134
+732136,2025-12-22T17:00Z,South Africa vs Angola,Full Time,732136
+732135,2025-12-22T20:00Z,Egypt vs Zimbabwe,Full Time,732135
+732137,2025-12-23T12:30Z,Congo DR vs Benin,Full Time,732137
+732139,2025-12-23T15:00Z,Senegal vs Botswana,Full Time,732139
+732138,2025-12-23T17:30Z,Nigeria vs Tanzania,Full Time,732138
+732140,2025-12-23T20:00Z,Tunisia vs Uganda,Full Time,732140
+732142,2025-12-24T12:30Z,Burkina Faso vs Equatorial Guinea,Full Time,732142
+732143,2025-12-24T15:00Z,Algeria vs Sudan,Full Time,732143
+732144,2025-12-24T17:30Z,Ivory Coast vs Mozambique,Full Time,732144
+732141,2025-12-24T20:00Z,Cameroon vs Gabon,Full Time,732141
+732145,2025-12-26T12:30Z,Angola vs Zimbabwe,Full Time,732145
+732146,2025-12-26T15:00Z,Egypt vs South Africa,Full Time,732146
+732148,2025-12-26T17:30Z,Zambia vs Comoros,Full Time,732148
+732147,2025-12-26T20:00Z,Morocco vs Mali,Full Time,732147
+732149,2025-12-27T12:30Z,Benin vs Botswana,Full Time,732149
+732152,2025-12-27T15:00Z,Senegal vs Congo DR,Full Time,732152
+732151,2025-12-27T17:30Z,Uganda vs Tanzania,Full Time,732151
+732150,2025-12-27T20:00Z,Nigeria vs Tunisia,Full Time,732150
+732156,2025-12-28T12:30Z,Gabon vs Mozambique,Full Time,732156
+732154,2025-12-28T15:00Z,Equatorial Guinea vs Sudan,Full Time,732154
+732153,2025-12-28T17:30Z,Algeria vs Burkina Faso,Full Time,732153
+732155,2025-12-28T20:00Z,Ivory Coast vs Cameroon,Full Time,732155
+732157,2025-12-29T16:00Z,Angola vs Egypt,Full Time,732157
+732159,2025-12-29T16:00Z,Zimbabwe vs South Africa,Full Time,732159
+732158,2025-12-29T19:00Z,Comoros vs Mali,Full Time,732158
+732160,2025-12-29T19:00Z,Zambia vs Morocco,Full Time,732160
+732163,2025-12-30T16:00Z,Tanzania vs Tunisia,Full Time,732163
+732164,2025-12-30T16:00Z,Uganda vs Nigeria,Full Time,732164
+732161,2025-12-30T19:00Z,Benin vs Senegal,Full Time,732161
+732162,2025-12-30T19:00Z,Botswana vs Congo DR,Full Time,732162
+732165,2025-12-31T16:00Z,Equatorial Guinea vs Algeria,Full Time,732165
+732166,2025-12-31T16:00Z,Sudan vs Burkina Faso,Full Time,732166
+732167,2025-12-31T19:00Z,Gabon vs Ivory Coast,Full Time,732167
+732168,2025-12-31T19:00Z,Mozambique vs Cameroon,Full Time,732168
+732170,2026-01-03T16:00Z,Senegal vs Sudan,Scheduled,732170
+732169,2026-01-03T19:00Z,Mali vs Tunisia,Scheduled,732169
+732171,2026-01-04T16:00Z,Morocco vs Tanzania,Scheduled,732171
+732172,2026-01-04T19:00Z,South Africa vs Cameroon,Scheduled,732172
+732173,2026-01-05T16:00Z,Egypt vs Benin,Scheduled,732173
+732174,2026-01-05T19:00Z,Nigeria vs Mozambique,Scheduled,732174
+732175,2026-01-06T16:00Z,Algeria vs Congo DR,Scheduled,732175
+732176,2026-01-06T19:00Z,Ivory Coast vs Burkina Faso,Scheduled,732176
+732177,2026-01-09T16:00Z,Round of 16 2 Winner vs Round of 16 1 Winner,Scheduled,732177
+732178,2026-01-09T19:00Z,Round of 16 4 Winner vs Round of 16 3 Winner,Scheduled,732178
+732180,2026-01-10T16:00Z,Round of 16 7 Winner vs Round of 16 6 Winner,Scheduled,732180
+732179,2026-01-10T19:00Z,Round of 16 5 Winner vs Round of 16 8 Winner,Scheduled,732179
+732181,2026-01-14T17:00Z,Quarterfinal 1 Winner vs Quarterfinal 4 Winner,Scheduled,732181
+732182,2026-01-14T20:00Z,Quarterfinal 3 Winner vs Quarterfinal 2 Winner,Scheduled,732182
+732183,2026-01-17T16:00Z,Semifinal 1 Loser vs Semifinal 2 Loser,Scheduled,732183
+732184,2026-01-18T19:00Z,Semifinal 1 Winner vs Semifinal 2 Winner,Scheduled,732184

@@ -1,0 +1,88 @@
+match_id,minute,team_id,scorer,assister,penalty,own_goal
+732133,55,2869,Brahim Díaz,Noussair Mazraoui,False,False
+732133,74,2869,Ayoub El Kaabi,Anass Salah-Eddine,False,False
+732134,61,2849,Lassine Sinayoko,,False,False
+732134,902,4277,Patson Daka,Mathews Banda,False,False
+732136,21,467,Oswin Appollis,Lyle Foster,False,False
+732136,35,653,Show,Fredy,False,False
+732136,79,467,Lyle Foster,Tshepang Moremi,False,False
+732135,20,4214,Prince Dube,Emmanuel Jalai,False,False
+732135,64,2620,Omar Marmoush,Mohamed Hamdy,False,False
+732135,901,2620,Mohamed Salah,Mostafa Mohamed,False,False
+732137,16,2850,Théo Bongonda,Arthur Masuaku,False,False
+732139,40,654,Nicolas Jackson,Ismail Jakobs,False,False
+732139,58,654,Nicolas Jackson,Ismaïla Sarr,False,False
+732139,90,654,Cherif Ndiaye,Cheick Sabaly,False,False
+732138,36,657,Semi Ajayi,Alex Iwobi,False,False
+732138,50,5778,Charles M'Mombwa,Novatus Miroshi,False,False
+732138,52,657,Ademola Lookman,Alex Iwobi,False,False
+732140,10,659,Ellyes Skhiri,Hannibal Mejbri,False,False
+732140,40,659,Elias Achouri,Ali Abdi,False,False
+732140,64,659,Elias Achouri,,False,False
+732140,902,4211,Denis Omedi,,False,False
+732142,85,8938,Marvin Anieboh,Carlos Akapo,False,False
+732142,905,2845,Georgi Minoungou,Dango Ouattara,False,False
+732142,908,2845,Edmond Tapsoba,,False,False
+732143,2,624,Riyad Mahrez,Hicham Boudaoui,False,False
+732143,61,624,Riyad Mahrez,Mohamed Amoura,False,False
+732143,85,624,Ibrahim Maza,Baghdad Bounedjah,False,False
+732144,49,4789,Amad,Franck Kessié,False,False
+732141,6,656,Etta Eyong,Bryan Mbeumo,False,False
+732145,24,653,Gelson Dala,Tó Carneiro,False,False
+732145,456,4214,Knowledge Musona,Bill Antonio,False,False
+732146,45,2620,Mohamed Salah,,True,False
+732147,455,2869,Brahim Díaz,,True,False
+732147,64,2849,Lassine Sinayoko,,True,False
+732149,28,2844,Yohan Roche,Steve Mounié,False,False
+732152,61,2850,Cédric Bakambu,,False,False
+732152,69,654,Sadio Mané,,False,False
+732151,59,5778,Simon Msuva,,True,False
+732151,80,4211,Uche Ikpeazu,Denis Omedi,False,False
+732150,44,657,Victor Osimhen,Ademola Lookman,False,False
+732150,50,657,Wilfred Ndidi,Ademola Lookman,False,False
+732150,67,657,Ademola Lookman,Victor Osimhen,False,False
+732150,74,659,Montassar Talbi,Hannibal Mejbri,False,False
+732150,87,659,Ali Abdi,,True,False
+732156,37,8939,Faisal Bangal,Geny Catamo,False,False
+732156,42,8939,Geny Catamo,,True,False
+732156,455,4231,Pierre-Emerick Aubameyang,,False,False
+732156,52,8939,Diogo Calila,Witi,False,False
+732156,76,4231,Alex Moussounda,,False,False
+732154,74,4319,Saúl Coco,,False,True
+732153,23,624,Riyad Mahrez,,True,False
+732155,51,4789,Amad,Ghislain Konan,False,False
+732155,56,656,Ghislain Konan,,False,True
+732159,7,467,Tshepang Moremi,Lyle Foster,False,False
+732159,19,4214,Tawanda Maswanhise,Jonah Fabisch,False,False
+732159,50,467,Lyle Foster,,False,False
+732159,73,4214,Aubrey Modiba,,False,True
+732159,82,467,Oswin Appollis,,True,False
+732160,9,2869,Ayoub El Kaabi,Azzedine Ounahi,False,False
+732160,27,2869,Brahim Díaz,Abde Ezzalzouli,False,False
+732160,50,2869,Ayoub El Kaabi,Azzedine Ounahi,False,False
+732163,43,659,Ismaël Gharbi,,True,False
+732163,48,5778,Feisal Salum,Novatus Miroshi,False,False
+732164,28,657,Paul Onuachu,Fisayo Dele-Bashiru,False,False
+732164,62,657,Raphael Onyedika,Samuel Chukwueze,False,False
+732164,67,657,Raphael Onyedika,Samuel Chukwueze,False,False
+732164,75,4211,Rogers Mato,Allan Okello,False,False
+732161,38,654,Abdoulaye Seck,Krépin Diatta,False,False
+732161,62,654,Habib Diallo,Sadio Mané,False,False
+732161,907,654,Cherif Ndiaye,,True,False
+732162,31,2850,Nathanaël Mbuku,Gaël Kakuta,False,False
+732162,41,2850,Gaël Kakuta,,True,False
+732162,60,2850,Gaël Kakuta,,False,False
+732165,19,624,Zineddine Belaïd,Anis Hadj Moussa,False,False
+732165,25,624,Farès Chaïbi,Ibrahim Maza,False,False
+732165,32,624,Ibrahim Maza,Anis Hadj Moussa,False,False
+732165,50,8938,Emilio Nsue,Álex Balboa,False,False
+732166,16,2845,Lassina Traoré,Stephane Aziz Ki,False,False
+732166,85,2845,Arsène Kouassi,Dango Ouattara,False,False
+732167,11,4231,Guélor Kanga,,False,False
+732167,21,4231,Denis Bouanga,,False,False
+732167,44,4789,Jean-Phillipe Krasso,Wilfried Zaha,False,False
+732167,84,4789,Evann Guessand,Christopher Operi,False,False
+732167,901,4789,Bazoumana Touré,Christopher Operi,False,False
+732168,23,8939,Geny Catamo,Nanani,False,False
+732168,28,656,Nené,,False,True
+732168,55,656,Christian Kofane,,False,False

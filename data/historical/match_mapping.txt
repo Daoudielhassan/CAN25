@@ -1,0 +1,52 @@
+732133|Morocco vs Comoros
+732134|Mali vs Zambia
+732135|Egypt vs Zimbabwe
+732136|South Africa vs Angola
+732137|Congo DR vs Benin
+732138|Nigeria vs Tanzania
+732139|Senegal vs Botswana
+732140|Tunisia vs Uganda
+732141|Cameroon vs Gabon
+732142|Burkina Faso vs Equatorial Guinea
+732143|Algeria vs Sudan
+732144|Ivory Coast vs Mozambique
+732145|Angola vs Zimbabwe
+732146|Egypt vs South Africa
+732147|Morocco vs Mali
+732148|Zambia vs Comoros
+732149|Benin vs Botswana
+732150|Nigeria vs Tunisia
+732151|Uganda vs Tanzania
+732152|Senegal vs Congo DR
+732153|Algeria vs Burkina Faso
+732154|Equatorial Guinea vs Sudan
+732155|Ivory Coast vs Cameroon
+732156|Gabon vs Mozambique
+732157|Angola vs Egypt
+732158|Comoros vs Mali
+732159|Zimbabwe vs South Africa
+732160|Zambia vs Morocco
+732161|Benin vs Senegal
+732162|Botswana vs Congo DR
+732163|Tanzania vs Tunisia
+732164|Uganda vs Nigeria
+732165|Equatorial Guinea vs Algeria
+732166|Sudan vs Burkina Faso
+732167|Gabon vs Ivory Coast
+732168|Mozambique vs Cameroon
+732169|Mali vs Tunisia
+732170|Senegal vs Sudan
+732171|Morocco vs Tanzania
+732172|South Africa vs Cameroon
+732173|Egypt vs Benin
+732174|Nigeria vs Mozambique
+732175|Algeria vs Congo DR
+732176|Ivory Coast vs Burkina Faso
+732177|Round of 16 2 Winner vs Round of 16 1 Winner
+732178|Round of 16 4 Winner vs Round of 16 3 Winner
+732179|Round of 16 5 Winner vs Round of 16 8 Winner
+732180|Round of 16 7 Winner vs Round of 16 6 Winner
+732181|Quarterfinal 1 Winner vs Quarterfinal 4 Winner
+732182|Quarterfinal 3 Winner vs Quarterfinal 2 Winner
+732183|Semifinal 1 Loser vs Semifinal 2 Loser
+732184|Semifinal 1 Winner vs Semifinal 2 Winner
