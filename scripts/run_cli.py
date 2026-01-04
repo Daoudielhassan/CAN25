@@ -14,7 +14,7 @@ from src.chatbot import AFCONChatbot, ResponseFormatter
 def main():
     """Run CLI chatbot"""
     print("=" * 60)
-    print("⚽ AFCON Chatbot CLI")
+    print("[SOCCER] AFCON Chatbot CLI")
     print("=" * 60)
     print()
     
@@ -22,9 +22,9 @@ def main():
     print("Initializing chatbot...")
     try:
         chatbot = AFCONChatbot(use_conversational=True)
-        print("✓ Chatbot ready!")
+        print("[OK] Chatbot ready!")
     except Exception as e:
-        print(f"✗ Error initializing chatbot: {e}")
+        print(f"[ERROR] Error initializing chatbot: {e}")
         print()
         print("Make sure you have:")
         print("1. Set up the vector store (python scripts/setup_vectorstore.py)")
@@ -50,22 +50,22 @@ def main():
             
             # Handle commands
             if user_input.lower() in ["quit", "exit"]:
-                print("\nGoodbye! ⚽")
+                print("\nGoodbye! [SOCCER]")
                 break
             
             if user_input.lower() == "clear":
                 result = chatbot.clear_conversation()
-                print(f"\n✓ {result['message']}\n")
+                print(f"\n[OK] {result['message']}\n")
                 continue
             
             if user_input.lower().startswith("live "):
                 event_id = user_input[5:].strip()
                 chatbot.set_live_match(event_id)
-                print(f"\n✓ Now monitoring match: {event_id}\n")
+                print(f"\n[OK] Now monitoring match: {event_id}\n")
                 continue
             
             # Process query
-            print("\n🤖 Thinking...\n")
+            print("\n Thinking...\n")
             response = chatbot.chat(user_input)
             
             # Format and display response
@@ -74,10 +74,10 @@ def main():
             print()
             
         except KeyboardInterrupt:
-            print("\n\nGoodbye! ⚽")
+            print("\n\nGoodbye! [SOCCER]")
             break
         except Exception as e:
-            print(f"\n❌ Error: {e}\n")
+            print(f"\n[ERROR] Error: {e}\n")
 
 
 if __name__ == "__main__":

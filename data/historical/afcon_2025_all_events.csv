@@ -35,15 +35,15 @@ event_id,date,teams,status,competition_id
 732166,2025-12-31T16:00Z,Sudan vs Burkina Faso,Full Time,732166
 732167,2025-12-31T19:00Z,Gabon vs Ivory Coast,Full Time,732167
 732168,2025-12-31T19:00Z,Mozambique vs Cameroon,Full Time,732168
-732170,2026-01-03T16:00Z,Senegal vs Sudan,Scheduled,732170
-732169,2026-01-03T19:00Z,Mali vs Tunisia,Scheduled,732169
+732170,2026-01-03T16:00Z,Senegal vs Sudan,Full Time,732170
+732169,2026-01-03T19:00Z,Mali vs Tunisia,Final Score - After Penalties,732169
 732171,2026-01-04T16:00Z,Morocco vs Tanzania,Scheduled,732171
 732172,2026-01-04T19:00Z,South Africa vs Cameroon,Scheduled,732172
 732173,2026-01-05T16:00Z,Egypt vs Benin,Scheduled,732173
 732174,2026-01-05T19:00Z,Nigeria vs Mozambique,Scheduled,732174
 732175,2026-01-06T16:00Z,Algeria vs Congo DR,Scheduled,732175
 732176,2026-01-06T19:00Z,Ivory Coast vs Burkina Faso,Scheduled,732176
-732177,2026-01-09T16:00Z,Round of 16 2 Winner vs Round of 16 1 Winner,Scheduled,732177
+732177,2026-01-09T16:00Z,Mali vs Senegal,Scheduled,732177
 732178,2026-01-09T19:00Z,Round of 16 4 Winner vs Round of 16 3 Winner,Scheduled,732178
 732180,2026-01-10T16:00Z,Round of 16 7 Winner vs Round of 16 6 Winner,Scheduled,732180
 732179,2026-01-10T19:00Z,Round of 16 5 Winner vs Round of 16 8 Winner,Scheduled,732179

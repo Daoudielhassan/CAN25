@@ -11,14 +11,14 @@ OUTPUT_DIR = Path("data/historical")
 
 def fetch_afcon_news(limit=50):
     """Fetch AFCON news articles from ESPN API"""
-    print("🔄 Fetching AFCON news from ESPN...")
+    print("[LOADING] Fetching AFCON news from ESPN...")
     
     try:
         r = requests.get(NEWS_URL, timeout=10)
         r.raise_for_status()
         data = r.json()
     except Exception as e:
-        print(f"❌ Error fetching news: {e}")
+        print(f"[ERROR] Error fetching news: {e}")
         return []
 
     news_items = []
@@ -42,14 +42,14 @@ def fetch_afcon_news(limit=50):
             "type": article.get("type", "")
         })
 
-    print(f"✓ Fetched {len(news_items)} news articles")
+    print(f"[OK] Fetched {len(news_items)} news articles")
     return news_items
 
 
 def save_news_to_csv(news_items):
     """Save news to CSV file"""
     if not news_items:
-        print("❌ No news items to save")
+        print("[ERROR] No news items to save")
         return
     
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -58,7 +58,7 @@ def save_news_to_csv(news_items):
     output_file = OUTPUT_DIR / "afcon_news.csv"
     df.to_csv(output_file, index=False)
     
-    print(f"✓ Saved news to {output_file}")
+    print(f"[OK] Saved news to {output_file}")
     print(f"  Total articles: {len(df)}")
 
 
@@ -77,12 +77,12 @@ def main():
         save_news_to_csv(news)
         
         # Display sample
-        print("\n📰 Latest Headlines:")
+        print("\n[NEWS] Latest Headlines:")
         for item in news[:5]:
             print(f"  • {item['headline']}")
     
     print("\n" + "=" * 60)
-    print("✅ News fetch complete!")
+    print("[OK] News fetch complete!")
     print("=" * 60)
 
 

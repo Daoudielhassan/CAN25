@@ -1,0 +1,41 @@
+team_id,team_name,team_abbreviation,is_active,appearances,redCards,yellowCards,points
+2849,Mali,MLI,True,3.0,1.0,10.0,13.0
+8938,Equatorial Guinea,EQG,True,3.0,1.0,8.0,11.0
+4277,Zambia,ZAM,True,3.0,1.0,7.0,10.0
+4211,Uganda,UGA,True,3.0,1.0,6.0,9.0
+2844,Benin,BEN,True,3.0,0.0,9.0,9.0
+4319,Sudan,SUD,True,3.0,1.0,4.0,7.0
+4214,Zimbabwe,ZIM,True,3.0,0.0,7.0,7.0
+2620,Egypt,EGY,True,3.0,1.0,4.0,7.0
+656,Cameroon,CMR,True,3.0,0.0,7.0,7.0
+2845,Burkina Faso,BKA,True,3.0,0.0,6.0,6.0
+657,Nigeria,NGA,True,3.0,0.0,6.0,6.0
+654,Senegal,SEN,True,3.0,1.0,3.0,6.0
+653,Angola,ANG,True,3.0,0.0,6.0,6.0
+467,South Africa,RSA,True,3.0,0.0,6.0,6.0
+5778,Tanzania,TAN,True,3.0,0.0,5.0,5.0
+4789,Ivory Coast,CIV,True,3.0,0.0,5.0,5.0
+2869,Morocco,MAR,True,3.0,0.0,5.0,5.0
+8939,Mozambique,MOZ,True,3.0,0.0,4.0,4.0
+8601,Comoros,COM,True,3.0,0.0,4.0,4.0
+4245,Botswana,BOT,True,3.0,0.0,4.0,4.0
+4231,Gabon,GAB,True,3.0,0.0,4.0,4.0
+2850,Congo DR,COD,True,3.0,0.0,3.0,3.0
+624,Algeria,ALG,True,3.0,0.0,3.0,3.0
+659,Tunisia,TUN,True,3.0,0.0,2.0,2.0
+19285,Round of 16 4 Winner,RD16 W4,False,,,,
+19284,Round of 16 3 Winner,RD16 W3,False,,,,
+19283,Round of 16 2 Winner,RD16 W2,False,,,,
+19282,Round of 16 1 Winner,RD16 W1,False,,,,
+19281,Round of 16 8 Winner,RD16 W8,False,,,,
+19280,Round of 16 7 Winner,RD16 W7,False,,,,
+19279,Round of 16 6 Winner,RD16 W6,False,,,,
+19278,Round of 16 5 Winner,RD16 W5,False,,,,
+17632,Quarterfinal 4 Winner,QW4,False,,,,
+17631,Quarterfinal 1 Winner,QFW1,False,,,,
+17630,Quarterfinal 3 Winner,QFW3,False,,,,
+17629,Quarterfinal 2 Winner,QFW2,False,,,,
+5961,Semifinal 2 Winner,SFW2,False,,,,
+5960,Semifinal 1 Winner,SFW1,False,,,,
+5959,Semifinal 2 Loser,SF L2,False,,,,
+5958,Semifinal 1 Loser,SF L1,False,,,,

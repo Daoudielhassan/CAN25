@@ -1,0 +1,4227 @@
+{
+  "timestamp": "2026-01-03T23:58:46Z",
+  "status": "success",
+  "season": {
+    "year": 2025,
+    "displayName": "2025 Africa Cup of Nations",
+    "type": 13251,
+    "name": "Round of 16"
+  },
+  "league": {
+    "id": "3908",
+    "name": "Africa Cup of Nations",
+    "abbreviation": "Africa Cup of Nations",
+    "shortName": "Africa Cup of Nations",
+    "midsizeName": "CAF.NATIONS",
+    "slug": "caf.nations",
+    "isTournament": true,
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "index",
+          "desktop",
+          "league"
+        ],
+        "href": "https://www.espn.com/soccer/league/_/name/caf.nations",
+        "text": "Index",
+        "shortText": "Index",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "league"
+        ],
+        "href": "https://www.espn.com/soccer/schedule/_/league/caf.nations",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "sportscenter",
+          "app",
+          "league"
+        ],
+        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~l:3908&section=scores",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "standings",
+          "desktop",
+          "league"
+        ],
+        "href": "https://www.espn.com/soccer/table/_/league/caf.nations",
+        "text": "Standings",
+        "shortText": "Standings",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "scores",
+          "desktop",
+          "league"
+        ],
+        "href": "https://www.espn.com/soccer/scoreboard/_/league/caf.nations",
+        "text": "Scores",
+        "shortText": "Scores",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "scores",
+          "sportscenter",
+          "app",
+          "league"
+        ],
+        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~l:3908&section=scores",
+        "text": "Scores",
+        "shortText": "Scores",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "league"
+        ],
+        "href": "https://www.espn.com/soccer/stats/_/league/caf.nations",
+        "text": "Stats",
+        "shortText": "Stats",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "teams",
+          "desktop",
+          "league"
+        ],
+        "href": "https://www.espn.com/soccer/teams/_/league/caf.nations",
+        "text": "Teams",
+        "shortText": "Teams",
+        "isExternal": false,
+        "isPremium": false
+      }
+    ],
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/leaguelogos/soccer/500/76.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2024-01-09T22:37Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/76.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2024-01-09T22:38Z"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "id": "2849",
+      "name": "Mali",
+      "abbreviation": "MLI",
+      "displayName": "Mali",
+      "shortDisplayName": "Mali",
+      "color": "14b53a",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/mli.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/mli.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 1.0,
+          "displayValue": "1"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 10.0,
+          "displayValue": "10"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 13.0,
+          "displayValue": "13.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/2849/mali",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/2849/mali",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/2849/mali",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/2849/mali",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/2849/mali",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "WDDDD"
+    },
+    {
+      "id": "8938",
+      "name": "Equatorial Guinea",
+      "abbreviation": "EQG",
+      "displayName": "Equatorial Guinea",
+      "shortDisplayName": "Eq. Guinea",
+      "color": "d50032",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/eqg.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/eqg.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 1.0,
+          "displayValue": "1"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 8.0,
+          "displayValue": "8"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 11.0,
+          "displayValue": "11.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/8938/equatorial-guinea",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/8938/equatorial-guinea",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/8938/equatorial-guinea",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/8938/equatorial-guinea",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/8938/equatorial-guinea",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "LLLLW"
+    },
+    {
+      "id": "4277",
+      "name": "Zambia",
+      "abbreviation": "ZAM",
+      "displayName": "Zambia",
+      "shortDisplayName": "Zambia",
+      "color": "00843d",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/zam.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2018-06-05T12:07Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/zam.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 1.0,
+          "displayValue": "1"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 7.0,
+          "displayValue": "7"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 10.0,
+          "displayValue": "10.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/4277/zambia",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/4277/zambia",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/4277/zambia",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/4277/zambia",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/4277/zambia",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "LDDLL"
+    },
+    {
+      "id": "4211",
+      "name": "Uganda",
+      "abbreviation": "UGA",
+      "displayName": "Uganda",
+      "shortDisplayName": "Uganda",
+      "color": "FCDC04",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/uga.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2018-06-05T12:07Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/uga.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 1.0,
+          "displayValue": "1"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 6.0,
+          "displayValue": "6"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 9.0,
+          "displayValue": "9.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/4211/uganda",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/4211/uganda",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/4211/uganda",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/4211/uganda",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/4211/uganda",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "LDLLW"
+    },
+    {
+      "id": "2844",
+      "name": "Benin",
+      "abbreviation": "BEN",
+      "displayName": "Benin",
+      "shortDisplayName": "Benin",
+      "color": "008751",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/ben.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/ben.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 0.0,
+          "displayValue": "0"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 9.0,
+          "displayValue": "9"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 9.0,
+          "displayValue": "9.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/2844/benin",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/2844/benin",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/2844/benin",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/2844/benin",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/2844/benin",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "LWLLL"
+    },
+    {
+      "id": "4319",
+      "name": "Sudan",
+      "abbreviation": "SUD",
+      "displayName": "Sudan",
+      "shortDisplayName": "Sudan",
+      "color": "D20300",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/sud.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2018-06-05T12:07Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/sud.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 1.0,
+          "displayValue": "1"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 4.0,
+          "displayValue": "4"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 7.0,
+          "displayValue": "7.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/4319/sudan",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/4319/sudan",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/4319/sudan",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/4319/sudan",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/4319/sudan",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "LLWLL"
+    },
+    {
+      "id": "4214",
+      "name": "Zimbabwe",
+      "abbreviation": "ZIM",
+      "displayName": "Zimbabwe",
+      "shortDisplayName": "Zimbabwe",
+      "color": "FFFF00",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/soccer/500/4214.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2019-05-08T16:07Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/4214.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2019-05-08T16:07Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 0.0,
+          "displayValue": "0"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 7.0,
+          "displayValue": "7"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 7.0,
+          "displayValue": "7.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/club/_/id/4214/zimbabwe",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/4214/zimbabwe",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/4214/zimbabwe",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/4214/zimbabwe",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/4214/zimbabwe",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": false,
+      "form": "LDLWL"
+    },
+    {
+      "id": "2620",
+      "name": "Egypt",
+      "abbreviation": "EGY",
+      "displayName": "Egypt",
+      "shortDisplayName": "Egypt",
+      "color": "D20300",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/egy.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 1.0,
+          "displayValue": "1"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 4.0,
+          "displayValue": "4"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 7.0,
+          "displayValue": "7.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/2620/egypt",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/2620/egypt",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/2620/egypt",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/2620/egypt",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/2620/egypt",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "DWWWW"
+    },
+    {
+      "id": "656",
+      "name": "Cameroon",
+      "abbreviation": "CMR",
+      "displayName": "Cameroon",
+      "shortDisplayName": "Cameroon",
+      "color": "197b63",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/crm.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2023-10-25T16:20Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/crm.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2023-10-25T16:21Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 0.0,
+          "displayValue": "0"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 7.0,
+          "displayValue": "7"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 7.0,
+          "displayValue": "7.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/656/cameroon",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/656/cameroon",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/656/cameroon",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/656/cameroon",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/656/cameroon",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "WDWLD"
+    },
+    {
+      "id": "2845",
+      "name": "Burkina Faso",
+      "abbreviation": "BKA",
+      "displayName": "Burkina Faso",
+      "shortDisplayName": "Burkina Faso",
+      "color": "008000",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/bka.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/bka.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 0.0,
+          "displayValue": "0"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 6.0,
+          "displayValue": "6"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 6.0,
+          "displayValue": "6.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/2845/burkina-faso",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/2845/burkina-faso",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/2845/burkina-faso",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/2845/burkina-faso",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/2845/burkina-faso",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "WLWWW"
+    },
+    {
+      "id": "657",
+      "name": "Nigeria",
+      "abbreviation": "NGA",
+      "displayName": "Nigeria",
+      "shortDisplayName": "Nigeria",
+      "color": "008751",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/nga.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2023-10-25T16:21Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/nga.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2023-10-25T16:21Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 0.0,
+          "displayValue": "0"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 6.0,
+          "displayValue": "6"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 6.0,
+          "displayValue": "6.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/657/nigeria",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/657/nigeria",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/657/nigeria",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/657/nigeria",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/657/nigeria",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "WWWLL"
+    },
+    {
+      "id": "654",
+      "name": "Senegal",
+      "abbreviation": "SEN",
+      "displayName": "Senegal",
+      "shortDisplayName": "Senegal",
+      "color": "00853f",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2018-06-05T12:07Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/sen.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 1.0,
+          "displayValue": "1"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 6.0,
+          "displayValue": "6.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/654/senegal",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/654/senegal",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/654/senegal",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/654/senegal",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/654/senegal",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "WWDWW"
+    },
+    {
+      "id": "653",
+      "name": "Angola",
+      "abbreviation": "ANG",
+      "displayName": "Angola",
+      "shortDisplayName": "Angola",
+      "color": "BE0027",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/ang.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/ang.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 0.0,
+          "displayValue": "0"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 6.0,
+          "displayValue": "6"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 6.0,
+          "displayValue": "6.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/653/angola",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/653/angola",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/653/angola",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/653/angola",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/653/angola",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "DDLWL"
+    },
+    {
+      "id": "467",
+      "name": "South Africa",
+      "abbreviation": "RSA",
+      "displayName": "South Africa",
+      "shortDisplayName": "South Africa",
+      "color": "087d5a",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2023-10-25T16:21Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/rsa.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2023-10-25T16:21Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 0.0,
+          "displayValue": "0"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 6.0,
+          "displayValue": "6"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 6.0,
+          "displayValue": "6.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/467/south-africa",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/467/south-africa",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/467/south-africa",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/467/south-africa",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/467/south-africa",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "WLWWW"
+    },
+    {
+      "id": "5778",
+      "name": "Tanzania",
+      "abbreviation": "TAN",
+      "displayName": "Tanzania",
+      "shortDisplayName": "Tanzania",
+      "color": "0033a0",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/tan.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2018-06-05T12:07Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/tan.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 0.0,
+          "displayValue": "0"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 5.0,
+          "displayValue": "5"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 5.0,
+          "displayValue": "5.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/5778/tanzania",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/5778/tanzania",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/5778/tanzania",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/5778/tanzania",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/5778/tanzania",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "DDLLL"
+    },
+    {
+      "id": "4789",
+      "name": "Ivory Coast",
+      "abbreviation": "CIV",
+      "displayName": "Ivory Coast",
+      "shortDisplayName": "Ivory Coast",
+      "color": "d48c00",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/civ.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 0.0,
+          "displayValue": "0"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 5.0,
+          "displayValue": "5"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 5.0,
+          "displayValue": "5.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/4789/ivory-coast",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/4789/ivory-coast",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/4789/ivory-coast",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/4789/ivory-coast",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/4789/ivory-coast",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "WDWWL"
+    },
+    {
+      "id": "2869",
+      "name": "Morocco",
+      "abbreviation": "MAR",
+      "displayName": "Morocco",
+      "shortDisplayName": "Morocco",
+      "color": "009060",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/mar.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 0.0,
+          "displayValue": "0"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 5.0,
+          "displayValue": "5"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 5.0,
+          "displayValue": "5.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/2869/morocco",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/2869/morocco",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/2869/morocco",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/2869/morocco",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/2869/morocco",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "WDWWW"
+    },
+    {
+      "id": "8939",
+      "name": "Mozambique",
+      "abbreviation": "MOZ",
+      "displayName": "Mozambique",
+      "shortDisplayName": "Mozambique",
+      "color": "D20300",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/moz.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/moz.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 0.0,
+          "displayValue": "0"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 4.0,
+          "displayValue": "4"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 4.0,
+          "displayValue": "4.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/8939/mozambique",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/8939/mozambique",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/8939/mozambique",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/8939/mozambique",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/8939/mozambique",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "LWLDL"
+    },
+    {
+      "id": "8601",
+      "name": "Comoros",
+      "abbreviation": "COM",
+      "displayName": "Comoros",
+      "shortDisplayName": "Comoros",
+      "color": "3d8e33",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/com.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/com.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 0.0,
+          "displayValue": "0"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 4.0,
+          "displayValue": "4"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 4.0,
+          "displayValue": "4.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/8601/comoros",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/8601/comoros",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/8601/comoros",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/8601/comoros",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/8601/comoros",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "DDLWL"
+    },
+    {
+      "id": "4245",
+      "name": "Botswana",
+      "abbreviation": "BOT",
+      "displayName": "Botswana",
+      "shortDisplayName": "Botswana",
+      "color": "0099ff",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/bot.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/bot.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 0.0,
+          "displayValue": "0"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 4.0,
+          "displayValue": "4"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 4.0,
+          "displayValue": "4.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/4245/botswana",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/4245/botswana",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/4245/botswana",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/4245/botswana",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/4245/botswana",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "LLLLD"
+    },
+    {
+      "id": "4231",
+      "name": "Gabon",
+      "abbreviation": "GAB",
+      "displayName": "Gabon",
+      "shortDisplayName": "Gabon",
+      "color": "00843d",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/gab.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/gab.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 0.0,
+          "displayValue": "0"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 4.0,
+          "displayValue": "4"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 4.0,
+          "displayValue": "4.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/4231/gabon",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/4231/gabon",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/4231/gabon",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/4231/gabon",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/4231/gabon",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "LLLLW"
+    },
+    {
+      "id": "2850",
+      "name": "Congo DR",
+      "abbreviation": "COD",
+      "displayName": "Congo DR",
+      "shortDisplayName": "Congo DR",
+      "color": "418fde",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2018-06-05T12:07Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/rdc.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 0.0,
+          "displayValue": "0"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 3.0,
+          "displayValue": "3.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/2850/congo-dr",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/2850/congo-dr",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/2850/congo-dr",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/2850/congo-dr",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/2850/congo-dr",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "WDWWW"
+    },
+    {
+      "id": "624",
+      "name": "Algeria",
+      "abbreviation": "ALG",
+      "displayName": "Algeria",
+      "shortDisplayName": "Algeria",
+      "color": "5bbd19",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/alg.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 0.0,
+          "displayValue": "0"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 3.0,
+          "displayValue": "3.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/624/algeria",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/624/algeria",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/624/algeria",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/624/algeria",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/624/algeria",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "WWWWW"
+    },
+    {
+      "id": "659",
+      "name": "Tunisia",
+      "abbreviation": "TUN",
+      "displayName": "Tunisia",
+      "shortDisplayName": "Tunisia",
+      "color": "D20300",
+      "isActive": true,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "default"
+          ],
+          "lastUpdated": "2018-06-05T12:07Z"
+        },
+        {
+          "href": "https://a.espncdn.com/i/teamlogos/countries/500-dark/tun.png",
+          "width": 500,
+          "height": 500,
+          "alt": "",
+          "rel": [
+            "full",
+            "dark"
+          ],
+          "lastUpdated": "2018-06-05T12:06Z"
+        }
+      ],
+      "statistics": [
+        {
+          "name": "appearances",
+          "displayName": "Appearances",
+          "shortDisplayName": "APP",
+          "description": "The number of times a player has made an appearance in a match.",
+          "abbreviation": "APP",
+          "value": 3.0,
+          "displayValue": "3"
+        },
+        {
+          "name": "redCards",
+          "displayName": "Red Cards",
+          "shortDisplayName": "RC",
+          "description": "The number of red cards that have been issued.",
+          "abbreviation": "RC",
+          "value": 0.0,
+          "displayValue": "0"
+        },
+        {
+          "name": "yellowCards",
+          "displayName": "Yellow Cards",
+          "shortDisplayName": "YC",
+          "description": "The number of yellow cards accumulated.",
+          "abbreviation": "YC",
+          "value": 2.0,
+          "displayValue": "2"
+        },
+        {
+          "name": "points",
+          "displayName": "Points",
+          "shortDisplayName": "PTS",
+          "description": "Discipline points for each player",
+          "abbreviation": "PTS",
+          "value": 2.0,
+          "displayValue": "2.0"
+        }
+      ],
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "clubhouse",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/_/id/659/tunisia",
+          "text": "Clubhouse",
+          "shortText": "Clubhouse",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/stats/_/id/659/tunisia",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "schedule",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/fixtures/_/id/659/tunisia",
+          "text": "Fixtures",
+          "shortText": "Fixtures",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "results",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/results/_/id/659/tunisia",
+          "text": "Results",
+          "shortText": "Results",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "squad",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/team/squad/_/id/659/tunisia",
+          "text": "Squad",
+          "shortText": "Squad",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "LDLWW"
+    },
+    {
+      "id": "19285",
+      "name": "Round of 16 4 Winner",
+      "abbreviation": "RD16 W4",
+      "displayName": "Round of 16 4 Winner",
+      "shortDisplayName": "RD16 W4",
+      "color": "000000",
+      "isActive": false,
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": false
+    },
+    {
+      "id": "19284",
+      "name": "Round of 16 3 Winner",
+      "abbreviation": "RD16 W3",
+      "displayName": "Round of 16 3 Winner",
+      "shortDisplayName": "RD16 W3",
+      "color": "000000",
+      "isActive": false,
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": false
+    },
+    {
+      "id": "19283",
+      "name": "Round of 16 2 Winner",
+      "abbreviation": "RD16 W2",
+      "displayName": "Round of 16 2 Winner",
+      "shortDisplayName": "RD16 W2",
+      "color": "000000",
+      "isActive": false,
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": false
+    },
+    {
+      "id": "19282",
+      "name": "Round of 16 1 Winner",
+      "abbreviation": "RD16 W1",
+      "displayName": "Round of 16 1 Winner",
+      "shortDisplayName": "RD16 W1",
+      "color": "000000",
+      "isActive": false,
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": false
+    },
+    {
+      "id": "19281",
+      "name": "Round of 16 8 Winner",
+      "abbreviation": "RD16 W8",
+      "displayName": "Round of 16 8 Winner",
+      "shortDisplayName": "RD16 W8",
+      "color": "000000",
+      "isActive": false,
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": false
+    },
+    {
+      "id": "19280",
+      "name": "Round of 16 7 Winner",
+      "abbreviation": "RD16 W7",
+      "displayName": "Round of 16 7 Winner",
+      "shortDisplayName": "RD16 W7",
+      "color": "000000",
+      "isActive": false,
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": false
+    },
+    {
+      "id": "19279",
+      "name": "Round of 16 6 Winner",
+      "abbreviation": "RD16 W6",
+      "displayName": "Round of 16 6 Winner",
+      "shortDisplayName": "RD16 W6",
+      "color": "000000",
+      "isActive": false,
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": false
+    },
+    {
+      "id": "19278",
+      "name": "Round of 16 5 Winner",
+      "abbreviation": "RD16 W5",
+      "displayName": "Round of 16 5 Winner",
+      "shortDisplayName": "RD16 W5",
+      "color": "000000",
+      "isActive": false,
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": false
+    },
+    {
+      "id": "17632",
+      "name": "Quarterfinal 4 Winner",
+      "abbreviation": "QW4",
+      "displayName": "Quarterfinal 4 Winner",
+      "shortDisplayName": "QF W4",
+      "color": "000000",
+      "isActive": false,
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": false
+    },
+    {
+      "id": "17631",
+      "name": "Quarterfinal 1 Winner",
+      "abbreviation": "QFW1",
+      "displayName": "Quarterfinal 1 Winner",
+      "shortDisplayName": "QF W1",
+      "color": "000000",
+      "isActive": false,
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": false
+    },
+    {
+      "id": "17630",
+      "name": "Quarterfinal 3 Winner",
+      "abbreviation": "QFW3",
+      "displayName": "Quarterfinal 3 Winner",
+      "shortDisplayName": "QF W3",
+      "color": "000000",
+      "isActive": false,
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": false
+    },
+    {
+      "id": "17629",
+      "name": "Quarterfinal 2 Winner",
+      "abbreviation": "QFW2",
+      "displayName": "Quarterfinal 2 Winner",
+      "shortDisplayName": "QF W2",
+      "color": "000000",
+      "isActive": false,
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": false
+    },
+    {
+      "id": "5961",
+      "name": "Semifinal 2 Winner",
+      "abbreviation": "SFW2",
+      "displayName": "Semifinal 2 Winner",
+      "shortDisplayName": "SF W2",
+      "color": "000000",
+      "isActive": false,
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true
+    },
+    {
+      "id": "5960",
+      "name": "Semifinal 1 Winner",
+      "abbreviation": "SFW1",
+      "displayName": "Semifinal 1 Winner",
+      "shortDisplayName": "SF W1",
+      "color": "000000",
+      "isActive": false,
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true
+    },
+    {
+      "id": "5959",
+      "name": "Semifinal 2 Loser",
+      "abbreviation": "SF L2",
+      "displayName": "Semifinal 2 Loser",
+      "shortDisplayName": "SF L2",
+      "color": "000000",
+      "isActive": false,
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "D"
+    },
+    {
+      "id": "5958",
+      "name": "Semifinal 1 Loser",
+      "abbreviation": "SF L1",
+      "displayName": "Semifinal 1 Loser",
+      "shortDisplayName": "SF L1",
+      "color": "000000",
+      "isActive": false,
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "standings",
+            "desktop",
+            "team"
+          ],
+          "href": "https://www.espn.com/soccer/standings/_/league/caf.nations",
+          "text": "Standings",
+          "shortText": "Standings",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "isNational": true,
+      "form": "D"
+    }
+  ]
+}

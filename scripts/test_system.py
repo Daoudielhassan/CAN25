@@ -18,10 +18,10 @@ def test_imports():
         from src.rag import AFCONRetriever, AFCONRAGChain
         from src.chatbot import AFCONChatbot, QueryDispatcher, ResponseFormatter
         from src.api import app
-        print("✓ All imports successful")
+        print("[OK] All imports successful")
         return True
     except Exception as e:
-        print(f"✗ Import error: {e}")
+        print(f"[ERROR] Import error: {e}")
         return False
 
 
@@ -35,13 +35,13 @@ def test_api_client():
         # Test with known event
         data = client.fetch_match_summary("732133")
         if data:
-            print("✓ API client working")
+            print("[OK] API client working")
             return True
         else:
-            print("⚠ API returned no data (might be network issue)")
+            print("[WARNING] API returned no data (might be network issue)")
             return True  # Not a critical failure
     except Exception as e:
-        print(f"✗ API client error: {e}")
+        print(f"[ERROR] API client error: {e}")
         return False
 
 
@@ -56,23 +56,23 @@ def test_config():
         # Check if .env exists
         env_file = Path(".env")
         if env_file.exists():
-            print("✓ .env file found")
+            print("[OK] .env file found")
             checks.append(True)
         else:
-            print("⚠ .env file not found (copy from .env.example)")
+            print("[WARNING] .env file not found (copy from .env.example)")
             checks.append(False)
         
         # Check OpenAI key
         if settings.openai_api_key and settings.openai_api_key != "your_openai_api_key_here":
-            print("✓ OpenAI API key configured")
+            print("[OK] OpenAI API key configured")
             checks.append(True)
         else:
-            print("⚠ OpenAI API key not configured")
+            print("[WARNING] OpenAI API key not configured")
             checks.append(False)
         
         return all(checks)
     except Exception as e:
-        print(f"✗ Configuration error: {e}")
+        print(f"[ERROR] Configuration error: {e}")
         return False
 
 
@@ -84,16 +84,16 @@ def test_data_files():
         csv_files = list(historical_dir.glob("*.csv"))
         
         if csv_files:
-            print(f"✓ Found {len(csv_files)} CSV files in data/historical/")
+            print(f"[OK] Found {len(csv_files)} CSV files in data/historical/")
             for csv_file in csv_files[:5]:  # Show first 5
                 print(f"  - {csv_file.name}")
             return True
         else:
-            print("⚠ No CSV files in data/historical/")
+            print("[WARNING] No CSV files in data/historical/")
             print("  Run: python scripts/setup_vectorstore.py")
             return False
     except Exception as e:
-        print(f"✗ Data files error: {e}")
+        print(f"[ERROR] Data files error: {e}")
         return False
 
 
@@ -104,14 +104,14 @@ def test_vectorstore():
         vectorstore_path = Path("./data/vector_store/afcon_vectorstore")
         
         if vectorstore_path.exists():
-            print("✓ Vector store found")
+            print("[OK] Vector store found")
             return True
         else:
-            print("⚠ Vector store not found")
+            print("[WARNING] Vector store not found")
             print("  Run: python scripts/setup_vectorstore.py")
             return False
     except Exception as e:
-        print(f"✗ Vector store error: {e}")
+        print(f"[ERROR] Vector store error: {e}")
         return False
 
 
@@ -136,7 +136,7 @@ def main():
     print("=" * 60)
     
     for test_name, passed in results.items():
-        status = "✓ PASS" if passed else "✗ FAIL"
+        status = "[OK] PASS" if passed else "[ERROR] FAIL"
         print(f"{test_name:.<40} {status}")
     
     print()
@@ -145,13 +145,13 @@ def main():
     total_count = len(results)
     
     if passed_count == total_count:
-        print("🎉 All tests passed! System is ready.")
+        print(" All tests passed! System is ready.")
         print()
         print("Next steps:")
         print("1. python -m src.api.server")
         print("2. Open frontend/index.html")
     else:
-        print(f"⚠ {total_count - passed_count} test(s) failed. Review messages above.")
+        print(f"[WARNING] {total_count - passed_count} test(s) failed. Review messages above.")
         print()
         print("Setup steps:")
         if not results["Configuration"]:

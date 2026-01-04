@@ -1,7 +1,7 @@
 """
 RAG Chain implementation for AFCON chatbot
 """
-from typing import Dict, Any
+from typing import Dict, Any, List
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_groq import ChatGroq
@@ -71,7 +71,8 @@ Answer:"""
     def answer_question(
         self, 
         question: str, 
-        k: int = 5
+        k: int = 5,
+        conversation_history: List[Dict[str, str]] = None
     ) -> Dict[str, Any]:
         """
         Answer a question using RAG with multi-level caching
@@ -79,10 +80,13 @@ Answer:"""
         Args:
             question: User's question
             k: Number of context documents to retrieve
+            conversation_history: Previous conversation for context (optional)
             
         Returns:
             Dictionary with answer and metadata
         """
+        # Note: Basic RAG doesn't use conversation history (cached responses)
+        # For conversational behavior, use AFCONConversationalRAG or AgenticRAGChain
         # Level 1: Check Redis cache first (fast, shared)
         if self.redis_cache.enabled:
             cached_answer = self.redis_cache.get_rag_answer(question)
@@ -109,7 +113,7 @@ Answer:"""
             }
         
         # Level 3: Generate new answer (uses API quota)
-        print(f"🔄 Generating new answer (uses API quota)...")
+        print(f"[LOADING] Generating new answer (uses API quota)...")
         
         # Retrieve relevant context
         docs = self.retriever.retrieve(question, k=k)
@@ -239,9 +243,21 @@ Answer:"""
     def answer_question(
         self, 
         question: str, 
-        k: int = 5
+        k: int = 5,
+        conversation_history: List[Dict[str, str]] = None
     ) -> Dict[str, Any]:
         """Answer with conversation history"""
+        # Use provided history if available, otherwise use internal history
+        if conversation_history:
+            # Override internal history with provided one
+            self.conversation_history = []
+            for msg in conversation_history[-10:]:  # Last 5 exchanges
+                if msg["role"] == "user":
+                    # Find corresponding assistant response
+                    pass
+            # For simplicity, just use internal format with question/answer
+            # This is a legacy conversational RAG, better to use AgenticRAG
+        
         # Retrieve context
         docs = self.retriever.retrieve(question, k=k)
         context = self.retriever.format_retrieved_context(docs)

@@ -22,7 +22,7 @@ def main():
     event_id = sys.argv[1]
     
     print("=" * 60)
-    print(f"🔴 Live Match Monitor - Event {event_id}")
+    print(f" Live Match Monitor - Event {event_id}")
     print("=" * 60)
     print()
     print("Press Ctrl+C to stop monitoring")

@@ -35,3 +35,5 @@ match_id,date_utc,season,competition,group_name,status,neutral_site,venue_availa
 732166,2025-12-31 16:00:00+00:00,2025,"2025 Africa Cup of Nations, Group Stage",GROUP E,Full Time,False,True
 732167,2025-12-31 19:00:00+00:00,2025,"2025 Africa Cup of Nations, Group Stage",GROUP F,Full Time,False,True
 732168,2025-12-31 19:00:00+00:00,2025,"2025 Africa Cup of Nations, Group Stage",GROUP F,Full Time,False,True
+732170,2026-01-03 16:00:00+00:00,2025,"2025 Africa Cup of Nations, Round of 16",Group A,Full Time,False,True
+732169,2026-01-03 19:00:00+00:00,2025,"2025 Africa Cup of Nations, Round of 16",Group A,Final Score - After Penalties,False,True

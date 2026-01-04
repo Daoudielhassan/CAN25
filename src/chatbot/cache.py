@@ -78,7 +78,7 @@ class ResponseCache:
         if cache_key in self.cache:
             entry = self.cache[cache_key]
             if not self._is_expired(entry['timestamp']):
-                print(f"✅ Cache HIT (exact): {query[:50]}...")
+                print(f"[OK] Cache HIT (exact): {query[:50]}...")
                 entry['hits'] = entry.get('hits', 0) + 1
                 self._save_cache()
                 return {
@@ -98,7 +98,7 @@ class ResponseCache:
             similarity = self._calculate_similarity(normalized_query, original_query)
             
             if similarity >= self.similarity_threshold:
-                print(f"✅ Cache HIT (similar {similarity:.1%}): {query[:50]}...")
+                print(f"[OK] Cache HIT (similar {similarity:.1%}): {query[:50]}...")
                 entry['hits'] = entry.get('hits', 0) + 1
                 self._save_cache()
                 return {
@@ -108,7 +108,7 @@ class ResponseCache:
                     'cache_type': f'similar ({similarity:.1%})'
                 }
         
-        print(f"❌ Cache MISS: {query[:50]}...")
+        print(f"[ERROR] Cache MISS: {query[:50]}...")
         return None
     
     def set(self, query: str, answer: str, sources: list):
@@ -129,7 +129,7 @@ class ResponseCache:
             'hits': 0
         }
         self._save_cache()
-        print(f"💾 Cached response for: {query[:50]}...")
+        print(f"[SAVE] Cached response for: {query[:50]}...")
     
     def _clean_expired(self):
         """Remove expired cache entries"""
@@ -142,13 +142,13 @@ class ResponseCache:
         
         if expired_keys:
             self._save_cache()
-            print(f"🧹 Cleaned {len(expired_keys)} expired cache entries")
+            print(f" Cleaned {len(expired_keys)} expired cache entries")
     
     def clear(self):
         """Clear entire cache"""
         self.cache = {}
         self._save_cache()
-        print("🗑️ Cache cleared")
+        print(" Cache cleared")
     
     def get_stats(self) -> Dict[str, Any]:
         """Get cache statistics"""

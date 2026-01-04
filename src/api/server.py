@@ -24,14 +24,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Global chatbot instance
+# Global chatbot instance and conversation history
 chatbot: Optional[AFCONChatbot] = None
+conversation_histories: Dict[str, List[Dict[str, str]]] = {}
 
 
 # Request/Response models
 class ChatRequest(BaseModel):
     """Chat request model"""
     query: str
+    session_id: Optional[str] = None
     include_sources: bool = False
 
 
@@ -60,10 +62,17 @@ async def startup_event():
     """Initialize chatbot on startup"""
     global chatbot
     try:
-        chatbot = AFCONChatbot(use_conversational=True)
-        print("✓ Chatbot initialized successfully")
+        # Use agentic RAG and semantic routing for best performance
+        chatbot = AFCONChatbot(
+            use_conversational=True,
+            use_semantic_routing=True,
+            use_agentic_rag=True  # Enable agentic RAG
+        )
+        print("[OK] Chatbot initialized successfully")
+        print("[OK] Semantic routing enabled (embedding-based classification)")
+        print("[OK] Agentic RAG enabled (LLM agent with tools)")
     except Exception as e:
-        print(f"✗ Error initializing chatbot: {e}")
+        print(f"[ERROR] Error initializing chatbot: {e}")
         chatbot = None
 
 
@@ -147,8 +156,23 @@ async def chat(request: ChatRequest):
         )
     
     try:
-        # Get response from chatbot
-        response = chatbot.chat(request.query)
+        # Get or create conversation history for this session
+        session_id = request.session_id or "default"
+        if session_id not in conversation_histories:
+            conversation_histories[session_id] = []
+        
+        history = conversation_histories[session_id]
+        
+        # Get response from chatbot with history
+        response = chatbot.chat(request.query, conversation_history=history)
+        
+        # Update conversation history
+        history.append({"role": "user", "content": request.query})
+        history.append({"role": "assistant", "content": response.get("answer", "")})
+        
+        # Keep only last 10 exchanges (20 messages)
+        if len(history) > 20:
+            conversation_histories[session_id] = history[-20:]
         
         # Format for API
         formatted = ResponseFormatter.format_for_api(response)
@@ -252,25 +276,55 @@ async def get_info():
     Returns:
         API info and settings
     """
+    routing_info = chatbot.get_routing_info() if chatbot else {}
+    
     return {
         "api_version": "1.0.0",
         "llm_model": settings.groq_model,
         "embedding_model": settings.embedding_model,
         "vector_store_type": settings.vector_store_type,
+        "routing": routing_info,
         "features": {
             "live_updates": True,
             "historical_queries": True,
             "rag_enabled": True,
-            "conversational": True
+            "conversational": True,
+            "semantic_routing": routing_info.get("semantic_routing_enabled", False),
+            "agentic_rag": routing_info.get("agentic_rag_enabled", False)
         }
     }
+
+
+@app.post("/routing/explain")
+async def explain_routing(request: ChatRequest):
+    """
+    Explain routing decision for a query (debugging tool)
+    
+    Args:
+        request: Chat request with query
+        
+    Returns:
+        Detailed explanation of routing decision
+    """
+    if not chatbot:
+        raise HTTPException(status_code=503, detail="Chatbot not initialized")
+    
+    try:
+        explanation = chatbot.explain_routing(request.query)
+        return {
+            "success": True,
+            "query": request.query,
+            "explanation": explanation
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error explaining routing: {str(e)}")
 
 
 if __name__ == "__main__":
     import uvicorn
     
-    print("🚀 Starting AFCON Chatbot API Server...")
-    print(f"📍 Server will be available at: http://{settings.host}:{settings.port}")
+    print("Starting AFCON Chatbot API Server...")
+    print(f"Server will be available at: http://{settings.host}:{settings.port}")
     print()
     
     uvicorn.run(

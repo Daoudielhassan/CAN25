@@ -87,17 +87,7 @@ class QueryDispatcher:
         
         return ""
     
-    def should_use_live_data(self, query: str) -> bool:
-        """
-        Determine if query requires live data
-        
-        Args:
-            query: User query
-            
-        Returns:
-            True if live data needed
-        """
-        return self.classify_query(query) == "live"
+
     
     def get_routing_info(self, query: str) -> Dict[str, Any]:
         """

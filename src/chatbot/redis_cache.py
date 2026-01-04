@@ -67,10 +67,10 @@ class RedisCache:
             # Test connection
             self.client.ping()
             self.enabled = True
-            print(f"✅ Redis cache connected: {host}:{port}")
+            print(f"[OK] Redis cache connected: {host}:{port}")
         except (redis.ConnectionError, redis.TimeoutError) as e:
-            print(f"⚠️  Redis not available: {e}")
-            print("💡 Falling back to in-memory cache")
+            print(f"[WARNING]  Redis not available: {e}")
+            print("[TIP] Falling back to in-memory cache")
             self.enabled = False
             self.fallback_cache: Dict[str, Dict[str, Any]] = {}
     
@@ -99,19 +99,19 @@ class RedisCache:
             try:
                 cached = self.client.get(key)
                 if cached:
-                    print(f"✅ Redis HIT: {cache_type}:{identifier[:20]}...")
+                    print(f"[OK] Redis HIT: {cache_type}:{identifier[:20]}...")
                     return json.loads(cached)
             except Exception as e:
-                print(f"⚠️  Redis get error: {e}")
+                print(f"[WARNING]  Redis get error: {e}")
                 return None
         else:
             # Fallback to in-memory cache
             entry = self.fallback_cache.get(key)
             if entry and time.time() < entry['expires']:
-                print(f"✅ Memory HIT: {cache_type}:{identifier[:20]}...")
+                print(f"[OK] Memory HIT: {cache_type}:{identifier[:20]}...")
                 return entry['data']
         
-        print(f"❌ Cache MISS: {cache_type}:{identifier[:20]}...")
+        print(f"[ERROR] Cache MISS: {cache_type}:{identifier[:20]}...")
         return None
     
     def set(
@@ -139,9 +139,9 @@ class RedisCache:
                     self.client.setex(key, ttl, serialized)
                 else:
                     self.client.set(key, serialized)
-                print(f"💾 Redis SET: {cache_type}:{identifier[:20]}... (TTL: {ttl}s)")
+                print(f"[SAVE] Redis SET: {cache_type}:{identifier[:20]}... (TTL: {ttl}s)")
             except Exception as e:
-                print(f"⚠️  Redis set error: {e}")
+                print(f"[WARNING]  Redis set error: {e}")
         else:
             # Fallback to in-memory cache
             expires = time.time() + ttl if ttl else float('inf')
@@ -149,7 +149,7 @@ class RedisCache:
                 'data': data,
                 'expires': expires
             }
-            print(f"💾 Memory SET: {cache_type}:{identifier[:20]}... (TTL: {ttl}s)")
+            print(f"[SAVE] Memory SET: {cache_type}:{identifier[:20]}... (TTL: {ttl}s)")
     
     def delete(self, cache_type: str, identifier: str):
         """Delete cached data"""
@@ -158,13 +158,13 @@ class RedisCache:
         if self.enabled:
             try:
                 self.client.delete(key)
-                print(f"🗑️  Redis DELETE: {cache_type}:{identifier[:20]}...")
+                print(f"  Redis DELETE: {cache_type}:{identifier[:20]}...")
             except Exception as e:
-                print(f"⚠️  Redis delete error: {e}")
+                print(f"[WARNING]  Redis delete error: {e}")
         else:
             if key in self.fallback_cache:
                 del self.fallback_cache[key]
-                print(f"🗑️  Memory DELETE: {cache_type}:{identifier[:20]}...")
+                print(f"  Memory DELETE: {cache_type}:{identifier[:20]}...")
     
     def invalidate_pattern(self, pattern: str):
         """
@@ -178,15 +178,15 @@ class RedisCache:
                 keys = self.client.keys(pattern)
                 if keys:
                     self.client.delete(*keys)
-                    print(f"🗑️  Redis INVALIDATE: {len(keys)} keys matching {pattern}")
+                    print(f"  Redis INVALIDATE: {len(keys)} keys matching {pattern}")
             except Exception as e:
-                print(f"⚠️  Redis invalidate error: {e}")
+                print(f"[WARNING]  Redis invalidate error: {e}")
         else:
             # Fallback pattern matching
             to_delete = [k for k in self.fallback_cache.keys() if pattern.replace('*', '') in k]
             for key in to_delete:
                 del self.fallback_cache[key]
-            print(f"🗑️  Memory INVALIDATE: {len(to_delete)} keys")
+            print(f"  Memory INVALIDATE: {len(to_delete)} keys")
     
     def get_live_match(self, event_id: str) -> Optional[Dict[str, Any]]:
         """Get cached live match data"""
@@ -241,7 +241,7 @@ class RedisCache:
         """Invalidate all live data for a match (on goal/event)"""
         self.delete("live", event_id)
         self.delete("events", event_id)
-        print(f"🔥 Invalidated live cache for match {event_id}")
+        print(f"[FIRE] Invalidated live cache for match {event_id}")
     
     def get_stats(self) -> Dict[str, Any]:
         """Get cache statistics"""
@@ -260,7 +260,7 @@ class RedisCache:
                     ) * 100
                 }
             except Exception as e:
-                print(f"⚠️  Redis stats error: {e}")
+                print(f"[WARNING]  Redis stats error: {e}")
                 return {'enabled': True, 'error': str(e)}
         else:
             return {

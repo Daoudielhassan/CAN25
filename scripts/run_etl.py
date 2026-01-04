@@ -27,37 +27,37 @@ def main():
     print()
     
     # Fetch data
-    print("📥 Fetching match data...")
+    print(" Fetching match data...")
     client = ESPNAPIClient()
     data = client.fetch_match_summary(event_id)
     
     if not data:
-        print("❌ Failed to fetch match data")
+        print("[ERROR] Failed to fetch match data")
         return
     
-    print("✓ Data fetched successfully")
+    print("[OK] Data fetched successfully")
     print()
     
     # Process data
-    print("🔄 Processing data...")
+    print("[LOADING] Processing data...")
     processor = AFCONDataProcessor()
     dataframes = processor.process_match_summary(data, event_id)
     
-    print("✓ Data processed successfully")
+    print("[OK] Data processed successfully")
     print()
     
     # Save to CSV
-    print("💾 Saving to CSV files...")
+    print("[SAVE] Saving to CSV files...")
     output_prefix = f"afcon_{event_id}"
     
     for name, df in dataframes.items():
         filename = f"{output_prefix}_{name}.csv"
         df.to_csv(filename, index=False)
-        print(f"   ✓ {filename} ({len(df)} rows)")
+        print(f"   [OK] {filename} ({len(df)} rows)")
     
     print()
     print("=" * 60)
-    print("✅ ETL Complete!")
+    print("[OK] ETL Complete!")
     print("=" * 60)
     print()
     print("Files generated:")

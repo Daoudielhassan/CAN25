@@ -56,12 +56,12 @@ class ESPNAPIClient:
                 if old_data:
                     # Check for new goals
                     if self.event_detector.detect_new_goal(old_data, data):
-                        print(f"⚽ NEW GOAL DETECTED! Invalidating cache for {event_id}")
+                        print(f"[SOCCER] NEW GOAL DETECTED! Invalidating cache for {event_id}")
                         self.cache.invalidate_live_match(event_id)
                     
                     # Check for status change (HT, FT)
                     elif self.event_detector.detect_status_change(old_data, data):
-                        print(f"🔔 MATCH STATUS CHANGED! Invalidating cache for {event_id}")
+                        print(f" MATCH STATUS CHANGED! Invalidating cache for {event_id}")
                         self.cache.invalidate_live_match(event_id)
                 
                 # Cache the new data

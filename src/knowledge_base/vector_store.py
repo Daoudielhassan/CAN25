@@ -25,7 +25,7 @@ class VectorStoreManager:
         self.store_path.mkdir(parents=True, exist_ok=True)
         
         # Initialize embeddings - Using free local HuggingFace embeddings
-        print("🔄 Loading embedding model (first time may take a moment)...")
+        print("Loading embedding model (first time may take a moment)...")
         self.embeddings = HuggingFaceEmbeddings(
             model_name="sentence-transformers/all-MiniLM-L6-v2",
             model_kwargs={'device': 'cpu'},
@@ -52,11 +52,11 @@ class VectorStoreManager:
         if not documents:
             raise ValueError("No documents provided")
         
-        print(f"🔄 Creating embeddings for {len(documents)} documents...")
+        print(f" Creating embeddings for {len(documents)} documents...")
         
         # Split documents if needed
         split_docs = self.text_splitter.split_documents(documents)
-        print(f"📝 Split into {len(split_docs)} chunks")
+        print(f" Split into {len(split_docs)} chunks")
         
         # Create vector store
         self.vectorstore = FAISS.from_documents(
@@ -64,7 +64,7 @@ class VectorStoreManager:
             embedding=self.embeddings
         )
         
-        print("✓ Vector store created successfully")
+        print("[OK] Vector store created successfully")
         return self.vectorstore
     
     def save_vectorstore(self, name: str = "afcon_vectorstore"):
@@ -79,7 +79,7 @@ class VectorStoreManager:
         
         save_path = self.store_path / name
         self.vectorstore.save_local(str(save_path))
-        print(f"💾 Vector store saved to {save_path}")
+        print(f" Vector store saved to {save_path}")
     
     def load_vectorstore(self, name: str = "afcon_vectorstore") -> FAISS:
         """
@@ -102,7 +102,7 @@ class VectorStoreManager:
             allow_dangerous_deserialization=True
         )
         
-        print(f"📂 Vector store loaded from {load_path}")
+        print(f"Vector store loaded from {load_path}")
         return self.vectorstore
     
     def similarity_search(
@@ -166,7 +166,7 @@ class VectorStoreManager:
         
         split_docs = self.text_splitter.split_documents(documents)
         self.vectorstore.add_documents(split_docs)
-        print(f"➕ Added {len(split_docs)} new document chunks")
+        print(f" Added {len(split_docs)} new document chunks")
     
     def get_retriever(self, k: int = 5, **kwargs):
         """

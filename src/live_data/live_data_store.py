@@ -99,7 +99,7 @@ class LiveMatchManager:
         Args:
             callback: Function to call with update data (optional)
         """
-        print(f"🔴 Monitoring live match {self.event_id}...")
+        print(f" Monitoring live match {self.event_id}...")
         
         try:
             while True:
@@ -113,7 +113,7 @@ class LiveMatchManager:
                 time.sleep(self.refresh_interval)
                 
         except KeyboardInterrupt:
-            print("\n⏹️  Stopped live monitoring")
+            print("\n⏹  Stopped live monitoring")
     
     def _print_update(self, update: Dict):
         """Default update printer"""
@@ -125,14 +125,14 @@ class LiveMatchManager:
         
         # Print new goals
         if update['new_goals']:
-            print("  ⚽ NEW GOALS:")
+            print("  [SOCCER] NEW GOALS:")
             for goal in update['new_goals']:
                 players = ', '.join(goal['participants'])
                 print(f"    {goal['minute']} - {goal['team']} - {players}")
         
         # Print new cards
         if update['new_cards']:
-            print("  🟨 NEW CARDS:")
+            print("  [YELLOW] NEW CARDS:")
             for card in update['new_cards']:
                 players = ', '.join(card['participants'])
                 print(f"    {card['minute']} - {card['team']} - {players}")

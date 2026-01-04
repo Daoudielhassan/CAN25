@@ -12,8 +12,8 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            background: #f7f7f8;
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -23,172 +23,255 @@
 
         .container {
             width: 100%;
-            max-width: 800px;
+            max-width: 900px;
             background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
             overflow: hidden;
             display: flex;
             flex-direction: column;
             height: 90vh;
-            max-height: 700px;
+            max-height: 800px;
         }
 
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 25px;
-            text-align: center;
+            background: white;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 16px 24px;
         }
 
         .header h1 {
-            font-size: 28px;
-            margin-bottom: 5px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 4px;
         }
 
         .header p {
-            font-size: 14px;
-            opacity: 0.9;
+            font-size: 13px;
+            color: #6b6b6b;
         }
 
         .chat-container {
             flex: 1;
             overflow-y: auto;
-            padding: 20px;
-            background: #f5f5f5;
+            padding: 24px;
+            background: white;
         }
 
         .message {
-            margin-bottom: 15px;
+            margin-bottom: 24px;
             display: flex;
             align-items: flex-start;
+            gap: 12px;
         }
 
         .message.user {
             justify-content: flex-end;
         }
 
-        .message-content {
-            max-width: 70%;
-            padding: 12px 16px;
-            border-radius: 18px;
-            line-height: 1.5;
-        }
-
-        .message.user .message-content {
-            background: #667eea;
-            color: white;
-            border-bottom-right-radius: 4px;
-        }
-
-        .message.bot .message-content {
-            background: white;
-            color: #333;
-            border-bottom-left-radius: 4px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            line-height: 1.6;
-        }
-
-        .message.bot .message-content strong {
-            color: #667eea;
-            font-weight: 600;
-        }
-
-        .message.bot .message-content em {
-            color: #555;
-            font-style: italic;
-        }
-
-        .message.bot .message-content ul {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-
-        .message.bot .message-content li {
-            margin: 5px 0;
-            list-style-type: disc;
-        }
-
-        .message.bot .message-content br {
-            display: block;
-            margin: 4px 0;
-            content: "";
-        }
-
-        .message-icon {
-            width: 36px;
-            height: 36px;
+        .message-avatar {
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 20px;
-            margin: 0 10px;
+            font-size: 16px;
+            flex-shrink: 0;
+            background: #f0f0f0;
         }
 
-        .message.user .message-icon {
-            background: #764ba2;
+        .message.user .message-avatar {
+            order: 2;
+            background: #2563eb;
+            color: white;
         }
 
-        .message.bot .message-icon {
-            background: #667eea;
+        .message-content {
+            max-width: 85%;
+            padding: 12px 16px;
+            border-radius: 8px;
+            line-height: 1.6;
+            font-size: 14px;
+            color: #1a1a1a;
+        }
+
+        .message.user .message-content {
+            background: #2563eb;
+            color: white;
+            order: 1;
+        }
+
+        .message.bot .message-content {
+            background: #f7f7f8;
+            color: #1a1a1a;
+        }
+
+        /* Markdown Styling */
+        .message-content h1, .message-content h2, .message-content h3 {
+            margin: 16px 0 8px 0;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .message-content h1 { font-size: 20px; }
+        .message-content h2 { font-size: 18px; }
+        .message-content h3 { font-size: 16px; }
+
+        .message-content p {
+            margin: 8px 0;
+        }
+
+        .message-content strong {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .message-content em {
+            font-style: italic;
+        }
+
+        .message-content code {
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+            font-size: 13px;
+        }
+
+        .message-content pre {
+            background: #f7f7f8;
+            padding: 12px;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 12px 0;
+        }
+
+        .message-content pre code {
+            background: none;
+            padding: 0;
+        }
+
+        .message-content ul, .message-content ol {
+            margin: 12px 0;
+            padding-left: 24px;
+        }
+
+        .message-content li {
+            margin: 6px 0;
+        }
+
+        .message-content blockquote {
+            border-left: 3px solid #e5e5e5;
+            padding-left: 16px;
+            margin: 12px 0;
+            color: #6b6b6b;
+        }
+
+        .message-content a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .message-content a:hover {
+            text-decoration: underline;
+        }
+
+        .message-content hr {
+            border: none;
+            border-top: 1px solid #e5e5e5;
+            margin: 16px 0;
+        }
+
+        /* Table Styling - Claude/ChatGPT Style */
+        .message-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14px;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .message-content table thead {
+            background: #f7f7f8;
+        }
+
+        .message-content table th {
+            padding: 10px 12px;
+            text-align: left;
+            font-weight: 600;
+            color: #1a1a1a;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .message-content table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #f0f0f0;
+            color: #1a1a1a;
+        }
+
+        .message-content table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .message-content table tbody tr:hover {
+            background: #fafafa;
         }
 
         .input-container {
-            padding: 20px;
+            padding: 16px 24px;
             background: white;
-            border-top: 1px solid #e0e0e0;
+            border-top: 1px solid #e5e5e5;
             display: flex;
-            gap: 10px;
+            gap: 12px;
         }
 
         .input-container input {
             flex: 1;
-            padding: 12px 16px;
-            border: 2px solid #e0e0e0;
-            border-radius: 25px;
-            font-size: 15px;
+            padding: 10px 16px;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            font-size: 14px;
             outline: none;
-            transition: border-color 0.3s;
+            transition: border-color 0.2s;
+            font-family: inherit;
         }
 
         .input-container input:focus {
-            border-color: #667eea;
+            border-color: #2563eb;
         }
 
         .input-container button {
-            padding: 12px 24px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 10px 20px;
+            background: #2563eb;
             color: white;
             border: none;
-            border-radius: 25px;
-            font-size: 15px;
+            border-radius: 8px;
+            font-size: 14px;
             cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: background 0.2s;
+            font-weight: 500;
         }
 
         .input-container button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
-        }
-
-        .input-container button:active {
-            transform: translateY(0);
+            background: #1d4ed8;
         }
 
         .input-container button:disabled {
-            opacity: 0.6;
+            opacity: 0.5;
             cursor: not-allowed;
-            transform: none;
         }
 
         .typing-indicator {
             display: none;
             align-items: center;
-            gap: 5px;
+            gap: 6px;
             padding: 12px 16px;
-            background: white;
-            border-radius: 18px;
+            background: #f7f7f8;
+            border-radius: 8px;
             width: fit-content;
         }
 
@@ -197,10 +280,10 @@
         }
 
         .typing-indicator span {
-            width: 8px;
-            height: 8px;
+            width: 6px;
+            height: 6px;
             border-radius: 50%;
-            background: #667eea;
+            background: #9ca3af;
             animation: bounce 1.4s infinite;
         }
 
@@ -217,187 +300,147 @@
                 transform: translateY(0);
             }
             30% {
-                transform: translateY(-10px);
+                transform: translateY(-6px);
             }
         }
 
         .error-message {
-            background: #ff4444 !important;
-            color: white !important;
+            background: #fee2e2 !important;
+            color: #991b1b !important;
+            border: 1px solid #fecaca !important;
         }
 
         .metadata {
-            font-size: 11px;
-            opacity: 0.7;
+            font-size: 12px;
+            color: #9ca3af;
             margin-top: 8px;
             padding-top: 8px;
             border-top: 1px solid #f0f0f0;
             display: flex;
             gap: 8px;
             align-items: center;
-            color: #666;
         }
 
         .metadata span {
             display: inline-flex;
             align-items: center;
-            gap: 3px;
+            gap: 4px;
         }
 
-        /* Copy button for messages */
-        .message.bot .message-content {
-            position: relative;
-        }
-
-        .copy-btn {
-            position: absolute;
-            top: 8px;
-            right: 8px;
-            background: rgba(102, 126, 234, 0.1);
-            border: none;
-            border-radius: 4px;
-            padding: 4px 8px;
-            font-size: 11px;
-            cursor: pointer;
-            opacity: 0;
-            transition: opacity 0.2s, background 0.2s;
-        }
-
-        .message.bot .message-content:hover .copy-btn {
-            opacity: 1;
-        }
-
-        .copy-btn:hover {
-            background: rgba(102, 126, 234, 0.2);
-        }
-
-        /* Scrollbar styling */
+        /* Scrollbar */
         .chat-container::-webkit-scrollbar {
-            width: 8px;
+            width: 6px;
         }
 
         .chat-container::-webkit-scrollbar-track {
-            background: #f1f1f1;
+            background: transparent;
         }
 
         .chat-container::-webkit-scrollbar-thumb {
-            background: #667eea;
-            border-radius: 4px;
+            background: #d1d5db;
+            border-radius: 3px;
         }
 
         .chat-container::-webkit-scrollbar-thumb:hover {
-            background: #764ba2;
+            background: #9ca3af;
         }
 
-        /* Live mode controls */
+        /* Quick Actions */
+        .quick-actions {
+            padding: 12px 24px;
+            background: #fafafa;
+            border-bottom: 1px solid #e5e5e5;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .quick-actions-label {
+            font-size: 12px;
+            color: #6b6b6b;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .quick-btn {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-right: 8px;
+            background: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            color: #1a1a1a;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .quick-btn:hover {
+            background: #f7f7f8;
+            border-color: #d1d5db;
+        }
+
         .live-controls {
-            background: #f8f9fa;
-            padding: 15px 25px;
-            border-bottom: 1px solid #dee2e6;
+            padding: 12px 24px;
+            background: white;
+            border-bottom: 1px solid #e5e5e5;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
         }
 
         .live-controls input {
             flex: 1;
             padding: 8px 12px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-size: 14px;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            font-size: 13px;
+            outline: none;
+        }
+
+        .live-controls input:focus {
+            border-color: #2563eb;
         }
 
         .live-controls button {
             padding: 8px 16px;
-            background: #28a745;
+            background: #059669;
             color: white;
             border: none;
-            border-radius: 8px;
+            border-radius: 6px;
             cursor: pointer;
-            font-size: 14px;
-            transition: background 0.3s;
+            font-size: 13px;
+            font-weight: 500;
+            transition: background 0.2s;
         }
 
         .live-controls button:hover {
-            background: #218838;
+            background: #047857;
         }
 
         .live-controls button.active {
-            background: #dc3545;
+            background: #dc2626;
+        }
+
+        .live-controls button.active:hover {
+            background: #b91c1c;
         }
 
         .live-status {
-            padding: 8px 12px;
-            border-radius: 8px;
+            padding: 6px 12px;
+            border-radius: 6px;
             font-size: 12px;
-            font-weight: 600;
+            font-weight: 500;
         }
 
         .live-status.active {
-            background: #d4edda;
-            color: #155724;
+            background: #d1fae5;
+            color: #065f46;
         }
 
         .live-status.inactive {
-            background: #f8d7da;
-            color: #721c24;
+            background: #f3f4f6;
+            color: #6b6b6b;
         }
-
-        /* Quick questions */
-        .quick-questions {
-            padding: 15px 25px;
-            background: #f8f9fa;
-            border-bottom: 1px solid #dee2e6;
-            overflow-x: auto;
-            white-space: nowrap;
-        }
-
-        .quick-questions-label {
-            font-size: 12px;
-            color: #666;
-            margin-bottom: 8px;
-            font-weight: 600;
-        }
-
-        .quick-question-btn {
-            display: inline-block;
-            padding: 6px 12px;
-            margin-right: 8px;
-            background: white;
-            border: 1px solid #667eea;
-            border-radius: 16px;
-            color: #667eea;
-            font-size: 12px;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-
-        .quick-question-btn:hover {
-            background: #667eea;
-            color: white;
-            transform: translateY(-2px);
-        }
-
-        /* Table styling */
-        .stats-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0;
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-        }
-
-        .stats-table thead {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-
-        .stats-table th {
-            padding: 12px 15px;
-            text-align: left;
-            font-weight: 600;
             font-size: 13px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -461,92 +504,55 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>⚽ AFCON Chatbot 2025</h1>
-            <p>Ask me anything about African Cup of Nations!</p>
+            <h1>AFCON 2025 Chatbot</h1>
+            <p>Ask about African Cup of Nations statistics, matches, and teams</p>
         </div>
 
         <!-- Live Mode Controls -->
         <div class="live-controls">
-            <span class="live-status inactive" id="liveStatus">⭕ Live Mode: OFF</span>
+            <span class="live-status inactive" id="liveStatus">Live Mode OFF</span>
             <input 
                 type="text" 
                 id="eventIdInput" 
-                placeholder="Enter Match Event ID (e.g., 732160)"
+                placeholder="Match Event ID (e.g., 732160)"
                 value="732160"
             />
             <button id="toggleLiveBtn" onclick="toggleLiveMode()">
-                🔴 Start Live Mode
+                Start Live Mode
             </button>
         </div>
 
-        <!-- Quick Questions -->
-        <div class="quick-questions">
-            <div class="quick-questions-label">💡 Try these questions:</div>
-            <button class="quick-question-btn" onclick="askQuestion('Who scored for Morocco vs Comoros?')">
-                ⚽ Morocco goals
+        <!-- Quick Actions -->
+        <div class="quick-actions">
+            <div class="quick-actions-label">Suggested questions</div>
+            <button class="quick-btn" onclick="askQuestion('Show Group A standings')">
+                Group A standings
             </button>
-            <button class="quick-question-btn" onclick="askQuestion('Show Morocco vs Comoros stats in a table')">
-                📊 Match stats table
+            <button class="quick-btn" onclick="askQuestion('Compare Morocco and Mali stats in a table')">
+                Morocco vs Mali table
             </button>
-            <button class="quick-question-btn" onclick="askQuestion('Give me stats about Algeria')">
-                📊 Algeria stats
+            <button class="quick-btn" onclick="askQuestion('Who are the top scorers?')">
+                Top scorers
             </button>
-            <button class="quick-question-btn" onclick="askQuestion('Which teams qualified from Group A?')">
-                🏆 Group A qualification
-            </button>
-            <button class="quick-question-btn" onclick="askQuestion('What was the final score of Egypt vs Zimbabwe?')">
-                📋 Egypt vs Zimbabwe
-            </button>
-            <button class="quick-question-btn" onclick="askQuestion('Who are the top scorers?')">
-                🎯 Top scorers
+            <button class="quick-btn" onclick="askQuestion('Latest AFCON news')">
+                Latest news
             </button>
         </div>
 
         <div class="chat-container" id="chatContainer">
             <div class="message bot">
-                <div class="message-icon">🤖</div>
+                <div class="message-avatar">🤖</div>
                 <div class="message-content">
-                    Welcome to the AFCON 2025 Chatbot! I can help you with:
-                    <br><br>
-                    📍 Live match updates<br>
-                    📊 Historical statistics<br>
-                    🏆 Team information<br>
-                    ⚽ Player stats<br>
-                    📋 Match statistics tables<br>
-                    <br>
-                    Try asking: "Show Morocco vs Comoros stats in a table" or "Which team has the most AFCON wins?"
-                    
-                    <!-- Test Table Example -->
-                    <div style="margin-top: 20px;">
-                        <div class="test-section-title">📊 Example: Match Statistics</div>
-                        <table class="stats-table">
-                            <thead>
-                                <tr>
-                                    <th>Team</th>
-                                    <th>Goals</th>
-                                    <th>Possession</th>
-                                    <th>Shots</th>
-                                    <th>Shots on Target</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Morocco</td>
-                                    <td>2</td>
-                                    <td>69.8%</td>
-                                    <td>16</td>
-                                    <td>7</td>
-                                </tr>
-                                <tr>
-                                    <td>Comoros</td>
-                                    <td>0</td>
-                                    <td>30.2%</td>
-                                    <td>4</td>
-                                    <td>1</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <strong>Welcome to AFCON 2025 Chatbot</strong>
+                    <p>I can help you with:</p>
+                    <ul>
+                        <li>Live match updates and scores</li>
+                        <li>Historical statistics and records</li>
+                        <li>Team and player information</li>
+                        <li>Match comparisons in tables</li>
+                        <li>Tournament news and updates</li>
+                    </ul>
+                    <p>Try asking: <em>"Compare Morocco and Mali stats in a table"</em> or <em>"Show Group A standings"</em></p>
                 </div>
             </div>
         </div>
@@ -568,25 +574,40 @@
         const userInput = document.getElementById('userInput');
         const sendButton = document.getElementById('sendButton');
 
+        // Enhanced markdown parser
         function parseMarkdown(text) {
-            // Convert markdown to HTML
             return text
+                // Headers
+                .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+                .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+                .replace(/^# (.+)$/gm, '<h1>$1</h1>')
                 // Bold: **text** or __text__
                 .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
                 .replace(/__(.+?)__/g, '<strong>$1</strong>')
-                // Italic: *text* or _text_
-                .replace(/\*(.+?)\*/g, '<em>$1</em>')
-                .replace(/_(.+?)_/g, '<em>$1</em>')
-                // Bullet points
+                // Italic: *text* or _text_ (but not in middle of words)
+                .replace(/\*([^\*\s](?:.*?[^\*\s])?)\*/g, '<em>$1</em>')
+                .replace(/_([^_\s](?:.*?[^_\s])?)_/g, '<em>$1</em>')
+                // Code: `code`
+                .replace(/`([^`]+)`/g, '<code>$1</code>')
+                // Links: [text](url)
+                .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>')
+                // Horizontal rule
+                .replace(/^---$/gm, '<hr>')
+                // Blockquotes
+                .replace(/^> (.+)$/gm, '<blockquote>$1</blockquote>')
+                // Unordered lists
                 .replace(/^\* (.+)$/gm, '<li>$1</li>')
                 .replace(/^- (.+)$/gm, '<li>$1</li>')
-                // Line breaks
-                .replace(/\n\n/g, '<br><br>')
+                // Ordered lists
+                .replace(/^\d+\. (.+)$/gm, '<li>$1</li>')
+                // Paragraphs (double newlines)
+                .replace(/\n\n/g, '</p><p>')
+                // Single line breaks
                 .replace(/\n/g, '<br>');
         }
 
+        // Enhanced table parser for markdown tables
         function parseTable(text) {
-            // Check if text contains a markdown table
             const tableRegex = /\|(.+)\|[\r\n]+\|[\s:|-]+\|[\r\n]+((?:\|.+\|[\r\n]*)+)/g;
             
             return text.replace(tableRegex, (match, headerRow, bodyRows) => {
@@ -596,11 +617,10 @@
                 // Parse body rows
                 const rows = bodyRows.trim().split('\n').map(row => 
                     row.split('|').map(cell => cell.trim()).filter(cell => cell)
-                );
+                ).filter(row => row.length > 0);
                 
                 // Build HTML table
-                let table = '<table class="stats-table">';
-                table += '<thead><tr>';
+                let table = '<table><thead><tr>';
                 headers.forEach(header => {
                     table += `<th>${header}</th>`;
                 });
@@ -620,15 +640,35 @@
         }
 
         function formatResponse(text) {
-            // Parse tables first
-            let formatted = parseTable(text);
+            // Extract HTML tables and preserve them
+            const tablePlaceholders = [];
+            let formatted = text.replace(/<table[^>]*>.*?<\/table>/gis, (match) => {
+                const placeholder = `__TABLE_${tablePlaceholders.length}__`;
+                tablePlaceholders.push(match);
+                return placeholder;
+            });
             
-            // Then parse markdown
+            // Parse markdown tables in remaining text
+            formatted = parseTable(formatted);
+            
+            // Parse markdown
             formatted = parseMarkdown(formatted);
             
-            // Wrap consecutive <li> in <ul>
+            // Restore HTML tables
+            tablePlaceholders.forEach((table, index) => {
+                formatted = formatted.replace(`__TABLE_${index}__`, table);
+            });
+            
+            // Wrap consecutive <li> elements in <ul> or <ol>
             formatted = formatted.replace(/(<li>.*?<\/li>)(\s*<li>)/g, '$1$2');
-            formatted = formatted.replace(/(<li>.*?<\/li>)/g, '<ul style="margin: 10px 0; padding-left: 20px;">$1</ul>');
+            formatted = formatted.replace(/(<li>.*?<\/li>)+/g, match => {
+                return '<ul>' + match + '</ul>';
+            });
+            
+            // Wrap in paragraph if no block elements
+            if (!formatted.match(/<(p|h[1-6]|ul|ol|table|blockquote|hr)/)) {
+                formatted = '<p>' + formatted + '</p>';
+            }
             
             return formatted;
         }
@@ -637,9 +677,9 @@
             const messageDiv = document.createElement('div');
             messageDiv.className = `message ${isUser ? 'user' : 'bot'}`;
 
-            const icon = document.createElement('div');
-            icon.className = 'message-icon';
-            icon.textContent = isUser ? '👤' : '🤖';
+            const avatar = document.createElement('div');
+            avatar.className = 'message-avatar';
+            avatar.textContent = isUser ? '👤' : '🤖';
 
             const content = document.createElement('div');
             content.className = `message-content ${isError ? 'error-message' : ''}`;
@@ -647,13 +687,6 @@
             // Format bot responses with markdown
             if (!isUser && !isError) {
                 content.innerHTML = formatResponse(text);
-                
-                // Add copy button
-                const copyBtn = document.createElement('button');
-                copyBtn.className = 'copy-btn';
-                copyBtn.textContent = '📋 Copy';
-                copyBtn.onclick = () => copyToClipboard(text);
-                content.appendChild(copyBtn);
             } else {
                 content.textContent = text;
             }
@@ -662,28 +695,26 @@
                 const metaDiv = document.createElement('div');
                 metaDiv.className = 'metadata';
                 
-                // Add emoji based on type
-                const typeEmoji = {
-                    'live': '🔴',
-                    'historical': '📚',
-                    'statistics': '📊',
-                    'general': '💬'
+                const typeLabels = {
+                    'live': 'Live Data',
+                    'historical': 'Historical',
+                    'statistics': 'Statistics',
+                    'general': 'General'
                 };
-                const emoji = typeEmoji[metadata.query_type] || '📝';
                 
                 metaDiv.innerHTML = `
-                    <span>${emoji} ${metadata.query_type || 'N/A'}</span>
+                    <span>${typeLabels[metadata.query_type] || 'Query'}</span>
                     <span>•</span>
-                    <span>📄 ${metadata.num_sources || 0} sources</span>
+                    <span>${metadata.num_sources || 0} sources</span>
                 `;
                 content.appendChild(metaDiv);
             }
 
             if (isUser) {
                 messageDiv.appendChild(content);
-                messageDiv.appendChild(icon);
+                messageDiv.appendChild(avatar);
             } else {
-                messageDiv.appendChild(icon);
+                messageDiv.appendChild(avatar);
                 messageDiv.appendChild(content);
             }
 
@@ -696,15 +727,15 @@
             indicator.className = 'message bot';
             indicator.id = 'typingIndicator';
 
-            const icon = document.createElement('div');
-            icon.className = 'message-icon';
-            icon.textContent = '🤖';
+            const avatar = document.createElement('div');
+            avatar.className = 'message-avatar';
+            avatar.textContent = '🤖';
 
             const typing = document.createElement('div');
             typing.className = 'typing-indicator active';
             typing.innerHTML = '<span></span><span></span><span></span>';
 
-            indicator.appendChild(icon);
+            indicator.appendChild(avatar);
             indicator.appendChild(typing);
             chatContainer.appendChild(indicator);
             chatContainer.scrollTop = chatContainer.scrollHeight;
@@ -778,23 +809,9 @@
             }
         }
 
-        // Quick question handler
         function askQuestion(question) {
             userInput.value = question;
             sendMessage();
-        }
-
-        // Copy to clipboard
-        function copyToClipboard(text) {
-            navigator.clipboard.writeText(text).then(() => {
-                // Show brief success message
-                const btn = event.target;
-                const originalText = btn.textContent;
-                btn.textContent = '✓ Copied!';
-                setTimeout(() => {
-                    btn.textContent = originalText;
-                }, 2000);
-            });
         }
 
         // Live mode management
@@ -806,7 +823,6 @@
             const status = document.getElementById('liveStatus');
 
             if (!isLiveMode) {
-                // Activate live mode
                 if (!eventId) {
                     alert('Please enter a Match Event ID');
                     return;
@@ -825,14 +841,14 @@
 
                     if (response.ok && data.success) {
                         isLiveMode = true;
-                        btn.textContent = '⏹️ Stop Live Mode';
+                        btn.textContent = 'Stop Live Mode';
                         btn.classList.add('active');
-                        status.textContent = `🟢 Live Mode: ON (Match ${eventId})`;
+                        status.textContent = `Live Mode ON (${eventId})`;
                         status.classList.remove('inactive');
                         status.classList.add('active');
                         
                         addMessage(
-                            `✅ Live mode activated for match ${eventId}! You can now ask questions about this live match.`,
+                            `Live mode activated for match ${eventId}. You can now ask questions about this live match.`,
                             false
                         );
                     } else {
@@ -840,22 +856,21 @@
                     }
                 } catch (error) {
                     addMessage(
-                        `❌ Error activating live mode: ${error.message}`,
+                        `Error activating live mode: ${error.message}`,
                         false,
                         true
                     );
                 }
             } else {
-                // Deactivate live mode
                 isLiveMode = false;
-                btn.textContent = '🔴 Start Live Mode';
+                btn.textContent = 'Start Live Mode';
                 btn.classList.remove('active');
-                status.textContent = '⭕ Live Mode: OFF';
+                status.textContent = 'Live Mode OFF';
                 status.classList.remove('active');
                 status.classList.add('inactive');
                 
                 addMessage(
-                    '⏹️ Live mode deactivated. Switched back to historical data mode.',
+                    'Live mode deactivated. Switched back to historical data mode.',
                     false
                 );
             }
