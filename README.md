@@ -15,31 +15,36 @@ AI-powered conversational chatbot for African Cup of Nations 2025 with real-time
 
 ## 🏗️ Architecture
 
-```
-src/
-├── api/                 # FastAPI server with conversation history
-├── chatbot/            # Main orchestrator with semantic routing
-│   ├── chatbot.py      # Core chatbot with follow-up detection
-│   ├── semantic_router.py  # Embedding-based query classification
-│   └── redis_cache.py  # Redis caching layer
-├── rag/                # RAG implementation
-│   ├── agentic_rag.py  # LLM agent with tool-calling
-│   ├── rag_chain.py    # Standard RAG chains
-│   └── retriever.py    # Vector search retriever
-├── knowledge_base/     # Data management
-│   ├── data_loader.py  # CSV to documents converter
-│   └── vector_store.py # FAISS vector store manager
-└── live_data/          # ESPN API integration
-    ├── api_client.py   # ESPN API wrapper
-    └── etl.py          # Data extraction and transformation
+**Système hybride intelligent combinant Traditional RAG (rapide) et Agentic RAG (précis)**
 
-data/
-├── historical/         # CSV files (matches, goals, teams)
-└── vector_store/       # FAISS embeddings (376 documents)
+### Composants Clés
 
-frontend/               # Web interface
-scripts/                # Setup and utility scripts
+- **API Server** (FastAPI) - Gestion sessions & historique conversationnel
+- **Chatbot Orchestrator** - Routage intelligent + détection questions de suivi
+- **Dual RAG System**:
+  - Traditional RAG: Vector store → LLM (< 1s, $0.001/requête)
+  - Agentic RAG: Multi-outils avec ESPN API (3-5s, $0.005/requête)
+- **Vector Store** (FAISS) - 376 documents historiques indexés
+- **Cache Multi-Niveaux** - Redis (1h) + Fichier (24h)
+- **Live Data** - Intégration ESPN API temps réel
+
+### Flux de Données
 ```
+User Query → Détection Suivi → Routage Sémantique
+                                      ↓
+                   ┌──────────────────┴──────────────────┐
+                   ↓                                     ↓
+            Traditional RAG                      Agentic RAG
+         (données historiques)              (multi-sources + API)
+                   ↓                                     ↓
+              Redis Cache ←→ Vector Store ←→ ESPN API
+                   ↓                                     ↓
+                   └──────────────────┬──────────────────┘
+                                      ↓
+                              Response + Context
+```
+
+**📖 Documentation complète:** [ARCHITECTURE_TECHNIQUE.md](ARCHITECTURE_TECHNIQUE.md) (français)
 
 ## 🚀 Quick Start
 
@@ -129,26 +134,14 @@ curl -X POST "http://localhost:8000/cache/clear"
 
 | Layer | Technologies |
 |-------|-------------|
-| **AI/LLM** | OpenAI GPT-4 Turbo, text-embedding-3-small |
-| **RAG** | LangChain, FAISS vector database |
-| **Backend** | FastAPI, Uvicorn |
-| **Data** | Pandas, Requests, Pydantic |
-| **Frontend** | HTML5, CSS3, Vanilla JavaScript |
-| **APIs** | ESPN AFCON API |
-
-## 📝 Usage Examples
-## 🛠️ Technology Stack
-
-| Layer | Technologies |
-|-------|-------------|
-| **LLM** | Groq (llama-3.1-70b-versatile) |
+| **LLM** | Groq (llama-3.3-70b-versatile) |
 | **Framework** | LangChain (Agentic RAG) |
 | **Embeddings** | sentence-transformers/all-MiniLM-L6-v2 |
-| **Vector Store** | FAISS |
-| **Cache** | Redis |
+| **Vector Store** | FAISS (376 documents) |
+| **Cache** | Redis (multi-niveaux) |
 | **API** | FastAPI + Uvicorn |
 | **Frontend** | HTML/CSS/JavaScript |
-| **Data Source** | ESPN API |
+| **Data Source** | ESPN API (temps réel) |
 
 ## 📊 Data Coverage
 
@@ -210,10 +203,10 @@ Documentation: `http://localhost:8000/docs`
 
 ## 📚 Documentation
 
-- [DEPLOYMENT.md](DEPLOYMENT.md) - Complete deployment guide
-- [ARCHITECTURE.md](ARCHITECTURE.md) - System architecture details
-- [AGENTIC_RAG.md](AGENTIC_RAG.md) - Agentic RAG implementation
-- [CACHING_STRATEGY.md](CACHING_STRATEGY.md) - Caching system details
+- **[ARCHITECTURE_TECHNIQUE.md](ARCHITECTURE_TECHNIQUE.md)** - Architecture complète (français)
+- [DEPLOYMENT.md](DEPLOYMENT.md) - Guide de déploiement
+- [DEPLOYMENT_CHECKLIST.md](DEPLOYMENT_CHECKLIST.md) - Checklist production
+- [CODE_CLEANUP_SUMMARY.md](CODE_CLEANUP_SUMMARY.md) - Nettoyage du code
 
 ## 🐛 Troubleshooting
 
@@ -289,55 +282,16 @@ ESPN API → ETL Processor → CSV Files → Data Loader → Embeddings → FAIS
 
 ## 🔐 Environment Variables
 
-Configure in `.env`:
-- `OPENAI_API_KEY` - Your OpenAI API key (required)
-- `OPENAI_MODEL` - GPT model (default: gpt-4-turbo-preview)
-- `EMBEDDING_MODEL` - Embedding model (default: text-embedding-3-small)
-- `REFRESH_INTERVAL` - Live update interval in seconds (default: 30)
-- `PORT` - API server port (default: 8000)
+Conf� Variables d'Environnement
 
-## 🐛 Troubleshooting
-
-**"Vector store not found"**
-```bash
-python scripts/setup_vectorstore.py
+Créer `.env` à la racine:
+```env
+GROQ_API_KEY=your_groq_api_key_here
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_ENABLED=true
 ```
 
-**"OpenAI API error"**
-- Check your API key in `.env`
-- Verify you have credits in your OpenAI account
+## 📄 Licence
 
-**"No data loaded"**
-- Ensure CSV files are in `data/historical/`
-- Check file format matches expected structure
-
-See [SETUP.md](SETUP.md) for more troubleshooting tips.
-
-## 📈 Extending the System
-
-### Add New Data Sources
-1. Create CSV files in AFCON format
-2. Place in `data/historical/`
-3. Run `python scripts/setup_vectorstore.py`
-
-### Add Custom Endpoints
-Edit `src/api/server.py` and add new FastAPI routes.
-
-### Customize RAG Prompts
-Modify prompt templates in `src/rag/rag_chain.py`.
-
-### Add New Query Types
-Update `src/chatbot/dispatcher.py` with new classification logic.
-
-## 🤝 Contributing
-
-Contributions welcome! Areas for improvement:
-- Additional data sources (player stats, tournament history)
-- Multi-language support
-- Caching layer for performance
-- Advanced analytics and visualizations
-- Mobile app interface
-
-## 📄 License
-
-MIT License - See LICENSE file for details
+MIT License - Projet éducatif et démonstration
